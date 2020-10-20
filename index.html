@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+		img {
+			margin-left: 200px;
+		}
+		h3 {
+			margin-left: 200px;
+		}
+		p {
+			text-align:center;
+			margin-left: 300px;
+			margin-right: 50px;
+		}
+   </style>
+<meta charset="utf-8">
+<title>CarDealership</title>
+	<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a>About Us</a>
+  <a>New Cars</a>
+  <a>Used Cars</a>
+  <a>FaQ's / Careers</a>
+	</div>
+</head>
+
+<body>
+	<img src="images/old car.jpg" alt="old car" height="100px" width="150px">
+	<h3>Lorem Ipsum Car</h3>
+	<p>Our Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>
