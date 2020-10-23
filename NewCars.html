@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+		img {
+			margin-left: 200px;
+		}
+		h3 {
+			margin-left: 200px;
+		}
+		p {
+			text-align:center;
+			margin-left: 300px;
+			margin-right: 50px;
+		}
+		h1 {
+			margin-left: 200px;
+		}
+   </style>
+<head>
+	<div class="sidebar">
+  <a>Home</a>
+  <a>About Us</a>
+  <a  class="active" href="#home">New Cars</a>
+  <a>Used Cars</a>
+  <a>FaQ's / Careers</a>
+	</div>
+<meta charset="utf-8">
+<title>NewCars.html</title>
+</head>
+
+<body>
+	<h1>New Cars</h1>
+</body>
+</html>
